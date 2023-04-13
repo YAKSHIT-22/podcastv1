@@ -1,8 +1,6 @@
 import React from 'react'
 import HeroSection from '../../containers/LandingPage/HeroSection'
 
-
-
 const LandingPage = () => {
   return (
     <>

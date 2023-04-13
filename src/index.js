@@ -11,7 +11,7 @@ root.render(
   <React.StrictMode>
      <BrowserRouter>
       <Global>
-    <App />
+      <App />
     </Global>
     </BrowserRouter>
   </React.StrictMode>
