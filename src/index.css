@@ -444,7 +444,9 @@
   body{
     font-family: 'Montserrat Alternates', sans-serif;
   }
-
+ /* div{
+    border:1px solid red;
+ } */
   html::-webkit-scrollbar{
     width: 0px;
     display: none;
