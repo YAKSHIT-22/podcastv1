@@ -7,14 +7,14 @@ const Navbar = () => {
   const onTriggerPopup = () => setPopupState(!popupState);
   return (
     <>
-      <div className="lg:flex justify-center items-center py-4 bg-[#F7EDE8] hidden">
-        <div className="flex w-[90%] justify-between items-center">
-          <div className="flex justify-center items-center gap-28">
-            <div>
-              <img src={logo} alt="" />
+      <div className="lg:flex justify-center items-center py-4 bg-[#F7EDE8] hidden px-4">
+        <div className="flex w-full px-4 justify-between gap-2 items-center">
+          <div className="flex justify-center items-center gap-24 pr-2">
+            <div className="flex items-center justify-center">
+              <img src={logo} alt="" className="aspect-square w-24 h-24"/>
             </div>
-            <div>
-              <ul className="flex justify-center items-center gap-20">
+            <div className="flex items-center justify-center p-2 w-full">
+              <ul className="flex justify-center items-center gap-16">
                 <li>
                   <p className="font-bold text-xl">Episodes</p>
                 </li>
@@ -28,7 +28,7 @@ const Navbar = () => {
               </ul>
             </div>
           </div>
-          <div className="flex items-center justify-center gap-14">
+          <div className="flex items-center justify-center gap-12 p-2">
             <div className="bg-transparent border-[3px] cursor-pointer font-bold border-black py-2 px-4 rounded-[14px] ">
               <button className="uppercase">recent episodes</button>
             </div>
