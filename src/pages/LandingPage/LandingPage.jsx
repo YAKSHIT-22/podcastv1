@@ -1,11 +1,12 @@
 import React from 'react'
 import HeroSection from '../../containers/LandingPage/HeroSection'
+import About from '../../containers/LandingPage/About'
 
 const LandingPage = () => {
   return (
     <>
     <HeroSection/>
-    <div className="bg-red-500">LandingPage</div>
+    <About/>
     </>
   )
 }

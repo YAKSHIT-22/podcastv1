@@ -21,7 +21,7 @@ import spotify from "../../assets/spotify.svg";
 const HeroSection = () => {
   SwiperCore.use([Autoplay, Navigation, Pagination]);
   return (
-    <section className="flex flex-col bg-[#F7EDE8] lg:gap-20 md:gap-14 pt-6 gap-10">
+    <section className="flex flex-col bg-[#F7EDE8] lg:gap-20 md:gap-14 pt-6 gap-10 max-w-screen-2xl h-full min-h-screen">
       <div className="flex flex-col justify-center items-center bg-[#F7EDE8] py-4">
         <div className="absolute left-0 hidden lg:flex">
           <img src={vector1} alt="" />
@@ -115,14 +115,16 @@ const HeroSection = () => {
           </SwiperSlide>
         </Swiper>
       </div>
-      <div className="lex flex-col justify-center items-center bg-[#F7EDE8] pt-4 pb-14">
-        <div className="flex lg:flex-row flex-col md:justify-center justify-center w-[85%] items-center text-center mx-auto lg:gap-12 gap-4 border-b-2 border-t-2 border-b-black border-t-black">
-          <div className="font-bold capitalize text-xl lg:mt-0 mt-6">
-            Supported By:
+      <div className="flex flex-col justify-center items-center bg-[#F7EDE8] pt-4 pb-14 px-4">
+        <div className="flex flex-col md:flex-row justify-center w-full  px-6 items-center text-center mx-auto lg:gap-12 gap-4 border-b-2 border-t-2 border-b-black border-t-black">
+          <div className="font-bold whitespace-nowrap capitalize text-xl md:mt-0 mt-4 flex items-center justify-center">
+            <p>Supported By:</p>          
           </div>
-          <img src={spotify} alt="" />
-          <img src={youtube} alt="" />
-          <img src={googlePodcasts} alt="" />
+          <div className="flex items-center justify-center flex-col md:flex-row w-full p-4">
+         <div className="flex items-center justify-center w-full p-4"> <img src={spotify} className="w-full" alt="spotify" /></div>
+         <div className="flex items-center justify-center w-full p-4"> <img src={youtube} className="w-full" alt="youtube" /></div>
+         <div className="flex items-center justify-center w-full p-4"> <img src={googlePodcasts} className="w-full" alt="google" /></div>
+          </div>
         </div>
       </div>
     </section>
