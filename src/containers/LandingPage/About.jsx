@@ -11,7 +11,7 @@ const About = () => {
   return (
     <section className="flex items-center justify-center max-w-screen-2xl min-h-screen h-full p-3 md:p-6 relative">
       <div className="flex items-center justify-center w-full p-4 sm:p-6 lg:p-8">
-        <div className="flex items-center justify-center w-full flex-col gap-6 sm:gap-8 lg:gap-12">
+        <div className="flex items-center justify-center w-full flex-col s:p-4 p-2 my-4 md:p-6 gap-6 sm:gap-8 lg:gap-12">
           <div className="w-full flex items-center justify-center">
             <div className="w-full s:w-[90%] md:w-[80%] lg:w-[70%] xl:w-[60%] flex items-center justify-center p-2">
               <h1 className="text-center font-bold text-gray-800 text-3xl md:text-4xl lg:text-5xl xl:text-6xl">
