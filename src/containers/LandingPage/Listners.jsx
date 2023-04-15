@@ -8,9 +8,9 @@ import SwiperCore, {
 } from "swiper";
 import "swiper/css/bundle";
 import quotes from "../../assets/quotes.svg";
-import pic1 from "../../assets/pic1.svg";
-import pic2 from "../../assets/pic2.svg";
-import pic3 from "../../assets/pic3.svg";
+import pic1 from "../../assets/pic1.png";
+import pic2 from "../../assets/pic2.png";
+import pic3 from "../../assets/pic3.png";
 import spotify1 from "../../assets/spotify1.svg";
 import googlePod from "../../assets/googlePod.svg";
 import applePod from "../../assets/applePod.svg";
@@ -25,8 +25,8 @@ const Listners = () => {
   SwiperCore.use([Autoplay, Navigation, Pagination]);
   return (
     <>
-      <section className="flex items-center justify-center max-w-screen-2xl min-h-[85vh] h-full p-4 flex-col md:py-8 relative bg-[#EDF3F7]">
-        <div className="flex items-center justify-center w-full p-4 sm:p-6 lg:p-8">
+      <section className="flex select-none items-center justify-center  min-h-[85vh] h-full p-4 flex-col md:py-8 relative bg-[#EDF3F7]">
+        <div className="flex items-center justify-center w-full max-w-screen-2xl mx-auto p-4 sm:p-6 lg:p-8">
           <div className="flex items-center justify-center w-full flex-col gap-6 sm:gap-8 lg:gap-12">
             <div className="w-full flex flex-col items-center justify-center md:gap-4 gap-2">
               <h1 className="text-center font-bold text-gray-800 text-3xl md:text-4xl lg:text-5xl xl:text-6xl">

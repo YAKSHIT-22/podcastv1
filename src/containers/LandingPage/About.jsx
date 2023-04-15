@@ -4,13 +4,13 @@ import about1 from "../../assets/about1.svg";
 import about2 from "../../assets/about2.svg";
 import spotify from "../../assets/spotify.svg";
 import aboutquote from "../../assets/aboutquote.svg";
-import personabout from "../../assets/personabout.svg";
+import personabout from "../../assets/personabout.png";
 import aboutspiral from "../../assets/aboutspiral.svg";
 import aboutstar from "../../assets/aboutstar.svg";
 const About = () => {
   return (
-    <section className="flex items-center justify-center max-w-screen-2xl min-h-screen h-full p-3 md:p-6 relative">
-      <div className="flex items-center justify-center w-full p-4 sm:p-6 lg:p-8">
+    <section className="flex select-none items-center justify-center  min-h-screen h-full p-3 md:p-6 relative">
+      <div className="flex items-center justify-center w-full max-w-screen-2xl mx-auto p-4 sm:p-6 lg:p-8">
         <div className="flex items-center justify-center w-full flex-col s:p-4 p-2 my-4 md:p-6 gap-6 sm:gap-8 lg:gap-12">
           <div className="w-full flex items-center justify-center">
             <div className="w-full s:w-[90%] md:w-[80%] lg:w-[70%] xl:w-[60%] flex items-center justify-center p-2">
