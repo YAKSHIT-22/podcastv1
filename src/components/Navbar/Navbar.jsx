@@ -39,7 +39,7 @@ const Navbar = () => {
         </div>
       </div>
       <div>
-      <div className="lg:hidden block">
+      <div className="lg:hidden flex">
           <div className="w-full px-[20px] py-[10px] z-[40] bg-[#F7EDE8]">
             <div className="flex justify-between items-center">
               <img src={logo} alt="img/logo.svg" />
