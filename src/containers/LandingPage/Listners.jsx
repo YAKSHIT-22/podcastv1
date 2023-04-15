@@ -1,4 +1,4 @@
-import React, { useRef } from "react";
+import React, { useRef,useState } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import SwiperCore, {
   EffectFade,
@@ -8,24 +8,25 @@ import SwiperCore, {
 } from "swiper";
 import "swiper/css/bundle";
 import quotes from "../../assets/quotes.svg";
-import pic1 from "../../assets/pic1.svg";
-import pic2 from "../../assets/pic2.svg";
-import pic3 from "../../assets/pic3.svg";
+import pic1 from "../../assets/pic1.png";
+import pic2 from "../../assets/pic2.png";
+import pic3 from "../../assets/pic3.png";
 import spotify1 from "../../assets/spotify1.svg";
 import googlePod from "../../assets/googlePod.svg";
 import applePod from "../../assets/applePod.svg";
-import { useSwiper } from "swiper/react";
 import about from "../../assets/about.svg";
-import listners from "../../assets/listners.svg";
+
 
 const Listners = () => {
-  //   const swiper = useSwiper();
-  const swiper = useSwiper();
-  const swiperRef = useRef(null);
+  const [_, setInit] = useState();
+
+  const prevRef = useRef(null);
+  const nextRef = useRef(null);
+  SwiperCore.use([Autoplay, Navigation, Pagination]);
   return (
     <>
-      <section className="flex items-center justify-center max-w-screen-2xl min-h-[50vh] h-full p-3 md:py-8 relative bg-[#EDF3F7]">
-        <div className="flex items-center justify-center w-full p-4 sm:p-6 lg:p-8">
+      <section className="flex select-none items-center justify-center  min-h-[85vh] h-full p-4 flex-col md:py-8 relative bg-[#EDF3F7]">
+        <div className="flex items-center justify-center w-full max-w-screen-2xl mx-auto p-4 sm:p-6 lg:p-8">
           <div className="flex items-center justify-center w-full flex-col gap-6 sm:gap-8 lg:gap-12">
             <div className="w-full flex flex-col items-center justify-center md:gap-4 gap-2">
               <h1 className="text-center font-bold text-gray-800 text-3xl md:text-4xl lg:text-5xl xl:text-6xl">
@@ -75,31 +76,20 @@ const Listners = () => {
             />
           </svg>
         </div>
-        <div className="absolute -top-16 flex items-center justify-center">
-          <svg
-            width="150"
-            height="154"
-            viewBox="0 0 150 154"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              d="M54 2C54.0002 120.75 82.6905 85.7939 86.822 77.8929C122.305 10.0357 42.4671 47.5357 56.6612 152"
-              stroke="black"
-              stroke-width="2.5"
-              stroke-linecap="round"
-            />
-          </svg>
-        </div>
-      </section>
-      <section className="w-full swiper md:pt-12 pt-6 pb-10 bg-[#EDF3F7] relative">
+        
+     
+      <div className="w-full swiper md:pt-12 pt-6 pb-10 bg-[#EDF3F7] relative">
         <div className="overflow-hidden w-full">
           <div className="w-full mb-6">
             <Swiper
               modules={[Navigation, Pagination, EffectFade, Autoplay]}
               //   slidesPerView={5}
               //   spaceBetween={20}
-              navigation={false}
+              onInit={() => setInit(true)}
+              navigation={{
+                prevEl: prevRef.current,
+                nextEl: nextRef.current,
+              }}
               autoplay={{ delay: 4500 }}
               breakpoints={{
                 300: {
@@ -169,6 +159,82 @@ const Listners = () => {
                         quis quos esse ut?
                       </p>
                       <div className="flex justify-center items-center gap-2">
+                        <img src={pic1} alt="" />
+                        <p>Luna lovegood,</p>
+                        <img src={spotify1} alt="" />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </SwiperSlide>
+              <SwiperSlide>
+                <div className=" bg-white w-full flex flex-col justify-start items-start swiper-slide px-3 py-5 rounded-[14px]">
+                  <div className="w-[90%] mx-auto flex justify-start items-center">
+                    <div className="flex justify-start items-start flex-col lg:gap-4 gap-3">
+                      <img src={quotes} alt="" />
+                      <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Aliquam facere rem consectetur, quod voluptates numquam
+                        quis quos esse ut?
+                      </p>
+                      <div className="flex justify-center items-center gap-2">
+                        <img src={pic3} alt="" />
+                        <p>Luna lovegood,</p>
+                        <img src={applePod} alt="" />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </SwiperSlide>
+              <SwiperSlide>
+                <div className=" bg-white w-full flex flex-col justify-start items-start swiper-slide px-3 py-5 rounded-[14px]">
+                  <div className="w-[90%] mx-auto flex justify-start items-center">
+                    <div className="flex justify-start items-start flex-col lg:gap-4 gap-3">
+                      <img src={quotes} alt="" />
+                      <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Aliquam facere rem consectetur, quod voluptates numquam
+                        quis quos esse ut?
+                      </p>
+                      <div className="flex justify-center items-center gap-2">
+                        <img src={pic1} alt="" />
+                        <p>Luna lovegood,</p>
+                        <img src={spotify1} alt="" />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </SwiperSlide>
+              <SwiperSlide>
+                <div className=" bg-white w-full flex flex-col justify-start items-start swiper-slide px-3 py-5 rounded-[14px]">
+                  <div className="w-[90%] mx-auto flex justify-start items-center">
+                    <div className="flex justify-start items-start flex-col lg:gap-4 gap-3">
+                      <img src={quotes} alt="" />
+                      <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Aliquam facere rem consectetur, quod voluptates numquam
+                        quis quos esse ut?
+                      </p>
+                      <div className="flex justify-center items-center gap-2">
+                        <img src={pic2} alt="" />
+                        <p>Luna lovegood,</p>
+                        <img src={googlePod} alt="" />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </SwiperSlide>
+              <SwiperSlide>
+                <div className=" bg-white w-full flex flex-col justify-start items-start swiper-slide px-3 py-5 rounded-[14px]">
+                  <div className="w-[90%] mx-auto flex justify-start items-center">
+                    <div className="flex justify-start items-start flex-col lg:gap-4 gap-3">
+                      <img src={quotes} alt="" />
+                      <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Aliquam facere rem consectetur, quod voluptates numquam
+                        quis quos esse ut?
+                      </p>
+                      <div className="flex justify-center items-center gap-2">
                         <img src={pic3} alt="" />
                         <p>Luna lovegood,</p>
                         <img src={applePod} alt="" />
@@ -178,7 +244,7 @@ const Listners = () => {
                 </div>
               </SwiperSlide>
               <div className="swiper-nav-btns flex md:px-10 mx-auto md:mt-10 mt-4">
-                <button onClick={() => swiper.slidePrev()}>
+                <button ref={prevRef}>
                   <svg
                     width="48"
                     height="48"
@@ -204,7 +270,7 @@ const Listners = () => {
                     />
                   </svg>
                 </button>
-                <button onClick={() => swiper.slideNext()}>
+                <button ref={nextRef}>
                   <svg
                     width="40"
                     height="40"
@@ -234,6 +300,10 @@ const Listners = () => {
             </Swiper>
           </div>
         </div>
+      </div>
+      <div className="absolute -top-10 left-0 right-0 flex items-center justify-center">
+        <img src={about} alt="sprial" className="w-20 h-20" />
+      </div>
       </section>
     </>
   );
