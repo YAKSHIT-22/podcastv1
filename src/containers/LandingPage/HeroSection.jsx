@@ -19,7 +19,7 @@ import googlePodcasts from "../../assets/googlePodacasts.svg";
 import spotify from "../../assets/spotify.svg";
 
 const HeroSection = () => {
-  SwiperCore.use([Autoplay, Navigation, Pagination]);
+ SwiperCore.use([Autoplay, Navigation, Pagination]); 
   return (
     <section className="flex flex-col bg-[#F7EDE8] lg:gap-20 md:gap-14 pt-6 gap-10 max-w-screen-2xl h-full min-h-screen">
       <div className="flex flex-col justify-center items-center bg-[#F7EDE8] py-4">
