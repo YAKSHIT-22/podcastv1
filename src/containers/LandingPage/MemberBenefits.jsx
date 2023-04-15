@@ -48,8 +48,8 @@ const MemberBenefits = () => {
 
 ]
   return (
-    <section className="flex items-center justify-center max-w-screen-2xl min-h-screen h-full p-3 md:p-6 relative">
-      <div className="flex items-center justify-center w-full p-4 sm:p-6 lg:p-8">
+    <section className="flex select-none items-center justify-center min-h-screen h-full p-3 md:p-6 relative">
+      <div className="flex items-center justify-center w-full max-w-screen-2xl mx-auto p-4 sm:p-6 lg:p-8">
         <div className="flex items-center justify-center w-full flex-col s:p-4 p-2 my-4 md:p-6 gap-4 sm:gap-6 lg:gap-10">
           <div className="w-full flex items-center justify-center ">
           <div className='flex items-center justify-center p-4 gap-2 relative'>

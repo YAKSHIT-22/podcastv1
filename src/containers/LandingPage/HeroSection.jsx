@@ -9,20 +9,20 @@ import SwiperCore, {
 import "swiper/css/bundle";
 import vector1 from "../../assets/vector1.svg";
 import vector2 from "../../assets/vector2.svg";
-import vector3 from "../../assets/vector3.svg";
-import vector4 from "../../assets/vector4.svg";
-import vector5 from "../../assets/vector5.svg";
-import vector6 from "../../assets/vector6.svg";
-import vector7 from "../../assets/vector7.svg";
-import youtube from "../../assets/youtube.svg";
+import vector3 from "../../assets/vector3.png";
+import vector4 from "../../assets/vector4.png";
+import vector5 from "../../assets/vector5.png";
+import vector6 from "../../assets/vector6.png";
+import vector7 from "../../assets/vector7.png";
+import youtube from "../../assets/youtube.png";
 import googlePodcasts from "../../assets/googlePodacasts.svg";
 import spotify from "../../assets/spotify.svg";
 
 const HeroSection = () => {
  SwiperCore.use([Autoplay, Navigation, Pagination]); 
   return (
-    <section className="flex flex-col bg-[#F7EDE8] lg:gap-20 md:gap-14 pt-6 gap-10 max-w-screen-2xl h-full min-h-screen">
-      <div className="flex flex-col justify-center items-center bg-[#F7EDE8] py-4">
+    <section className="flex select-none flex-col bg-[#F7EDE8] lg:gap-20 md:gap-14 pt-6 gap-10 w-screen h-full min-h-screen">
+      <div className="flex flex-col justify-center items-center bg-[#F7EDE8] py-4 max-w-screen-2xl mx-auto">
         <div className="absolute left-0 hidden lg:flex">
           <img src={vector1} alt="" />
         </div>
@@ -116,14 +116,14 @@ const HeroSection = () => {
         </Swiper>
       </div>
       <div className="flex flex-col justify-center items-center bg-[#F7EDE8] pt-4 pb-14 px-4">
-        <div className="flex flex-col md:flex-row justify-center w-full  px-6 items-center text-center mx-auto lg:gap-12 gap-4 border-b-2 border-t-2 border-b-black border-t-black">
+        <div className="flex flex-col md:flex-row justify-center w-full flex-1  px-6 items-center text-center mx-auto lg:gap-12 gap-4 border-b-2 border-t-2 border-b-black border-t-black">
           <div className="font-bold whitespace-nowrap capitalize text-xl md:mt-0 mt-4 flex items-center justify-center">
             <p>Supported By:</p>          
           </div>
           <div className="flex items-center justify-center flex-col md:flex-row w-full p-4">
-         <div className="flex items-center justify-center w-full p-4"> <img src={spotify} className="w-full" alt="spotify" /></div>
-         <div className="flex items-center justify-center w-full p-4"> <img src={youtube} className="w-full" alt="youtube" /></div>
-         <div className="flex items-center justify-center w-full p-4"> <img src={googlePodcasts} className="w-full" alt="google" /></div>
+         <div className="flex items-center justify-center w-full p-4"> <img src={spotify} className="w-[50%]" alt="spotify" /></div>
+         <div className="flex items-center justify-center w-full p-4"> <img src={youtube} className="w-[50%]" alt="youtube" /></div>
+         <div className="flex items-center justify-center w-full p-4"> <img src={googlePodcasts} className="w-[50%]" alt="google" /></div>
           </div>
         </div>
       </div>
