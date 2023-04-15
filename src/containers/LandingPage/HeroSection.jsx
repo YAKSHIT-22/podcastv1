@@ -28,7 +28,7 @@ const HeroSection = () => {
         </div>
         <div className="flex flex-col justify-center items-center text-center mx-auto lg:gap-12 gap-8">
           <div className="flex flex-col justify-center lg:text-7xl text-6xl font-bold gap-3">
-            <h1>Your Daily</h1>
+            <h1 className="text-gray-800">Your Daily</h1>
             <h1 className="text-[#CD4631]">Podcast</h1>
           </div>
           <div className="text-[#4D4D4D] md:w-[65%] w-[80%] lg:text-xl text-lg">
