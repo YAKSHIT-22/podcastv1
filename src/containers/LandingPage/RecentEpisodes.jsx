@@ -7,12 +7,12 @@ import eps5 from "../../assets/eps5.svg";
 import eps6 from "../../assets/eps6.svg";
 import epi1 from "../../assets/epi1.svg";
 import recentEpi1 from "../../assets/recentEpi1.svg";
-
+import spiral from '../../assets/about.svg'
 const RecentEpisodes = () => {
   return (
     <>
-      <section className="flex items-center justify-center max-w-screen-2xl min-h-[50vh] h-full p-8 md:py-24 relative bg-[#F7EDE8] overflow-x-hidden">
-        <div className="flex items-center justify-center w-full">
+      <section className="flex items-center justify-center  min-h-[50vh] h-full p-8 md:py-24 relative bg-[#F7EDE8]">
+        <div className="flex items-center justify-center max-w-screen-2xl mx-auto w-full">
           <div className="flex flex-col items-center justify-center w-[90%] mx-auto md:gap-24 gap-12">
             <div className="flex flex-col justify-center text-center items-center md:gap-4 gap-2">
               <h1 className="font-bold text-3xl md:text-4xl lg:text-5xl xl:text-6xl">
@@ -238,10 +238,9 @@ const RecentEpisodes = () => {
             </div>
           </div>
         </div>
-        <div className="absolute md:top-[9rem] top-[5rem] -right-6">
+        <div className="absolute md:top-[14rem] top-[8rem]  right-6">
           <svg
-            width="240"
-            height="240"
+            className="w-24 h-24"
             viewBox="0 0 240 240"
             fill="none"
             xmlns="http://www.w3.org/2000/svg"
@@ -260,22 +259,9 @@ const RecentEpisodes = () => {
             />
           </svg>
         </div>
-        <div className="absolute z-10 -top-16 flex items-center justify-center">
-          <svg
-            width="150"
-            height="154"
-            viewBox="0 0 150 154"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              d="M54 2C54.0002 120.75 82.6905 85.7939 86.822 77.8929C122.305 10.0357 42.4671 47.5357 56.6612 152"
-              stroke="black"
-              stroke-width="2.5"
-              stroke-linecap="round"
-            />
-          </svg>
-        </div>
+        <div className="absolute -top-10 left-0 right-0 flex items-center justify-center">
+        <img src={spiral} alt="sprial" className="w-20 h-20" />
+      </div>
       </section>
     </>
   );

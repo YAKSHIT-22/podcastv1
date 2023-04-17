@@ -120,9 +120,9 @@ const Listners = () => {
                         Aliquam facere rem consectetur, quod voluptates numquam
                         quis quos esse ut?
                       </p>
-                      <div className="flex justify-center items-center gap-2">
+                      <div className="flex justify-center items-center p-2 gap-2">
                         <img src={pic1} alt="" />
-                        <p>Luna lovegood,</p>
+                        <p className="text-xs lg:text-base">Luna lovegood,</p>
                         <img src={spotify1} alt="" />
                       </div>
                     </div>
@@ -139,9 +139,9 @@ const Listners = () => {
                         Aliquam facere rem consectetur, quod voluptates numquam
                         quis quos esse ut?
                       </p>
-                      <div className="flex justify-center items-center gap-2">
+                      <div className="flex justify-center items-center p-2 gap-2">
                         <img src={pic2} alt="" />
-                        <p>Luna lovegood,</p>
+                        <p  className="text-xs lg:text-base">Luna lovegood,</p>
                         <img src={googlePod} alt="" />
                       </div>
                     </div>
@@ -158,9 +158,9 @@ const Listners = () => {
                         Aliquam facere rem consectetur, quod voluptates numquam
                         quis quos esse ut?
                       </p>
-                      <div className="flex justify-center items-center gap-2">
+                      <div className="flex justify-center items-center p-2 gap-2">
                         <img src={pic1} alt="" />
-                        <p>Luna lovegood,</p>
+                        <p  className="text-xs lg:text-base">Luna lovegood,</p>
                         <img src={spotify1} alt="" />
                       </div>
                     </div>
@@ -177,9 +177,9 @@ const Listners = () => {
                         Aliquam facere rem consectetur, quod voluptates numquam
                         quis quos esse ut?
                       </p>
-                      <div className="flex justify-center items-center gap-2">
+                      <div className="flex justify-center items-center p-2 gap-2">
                         <img src={pic3} alt="" />
-                        <p>Luna lovegood,</p>
+                        <p  className="text-xs lg:text-base">Luna lovegood,</p>
                         <img src={applePod} alt="" />
                       </div>
                     </div>
@@ -196,9 +196,9 @@ const Listners = () => {
                         Aliquam facere rem consectetur, quod voluptates numquam
                         quis quos esse ut?
                       </p>
-                      <div className="flex justify-center items-center gap-2">
+                      <div className="flex justify-center items-center p-2 gap-2">
                         <img src={pic1} alt="" />
-                        <p>Luna lovegood,</p>
+                        <p  className="text-xs lg:text-base">Luna lovegood,</p>
                         <img src={spotify1} alt="" />
                       </div>
                     </div>
@@ -215,9 +215,9 @@ const Listners = () => {
                         Aliquam facere rem consectetur, quod voluptates numquam
                         quis quos esse ut?
                       </p>
-                      <div className="flex justify-center items-center gap-2">
+                      <div className="flex justify-center items-center p-2 gap-2">
                         <img src={pic2} alt="" />
-                        <p>Luna lovegood,</p>
+                        <p  className="text-xs lg:text-base">Luna lovegood,</p>
                         <img src={googlePod} alt="" />
                       </div>
                     </div>
@@ -236,7 +236,7 @@ const Listners = () => {
                       </p>
                       <div className="flex justify-center items-center gap-2">
                         <img src={pic3} alt="" />
-                        <p>Luna lovegood,</p>
+                        <p  className="text-xs lg:text-base">Luna lovegood,</p>
                         <img src={applePod} alt="" />
                       </div>
                     </div>
