@@ -42,7 +42,7 @@ const HeroSection = () => {
           <img src={vector2} alt="" />
         </div>
       </div>
-      <div className="flex items-center justify-start w-full h-full">
+      <div className="flex items-center justify-center w-full h-full">
         <Swiper
           modules={[Navigation, Pagination, EffectFade, Autoplay]}
           slidesPerView={5}
@@ -51,19 +51,19 @@ const HeroSection = () => {
           autoplay={{ delay: 4500 }}
           breakpoints={{
             300: {
-              slidesPerView: 1.3,
+              slidesPerView: 1,
               spaceBetween: 10,
             },
             520: {
-              slidesPerView: 2.4,
+              slidesPerView: 2,
               spaceBetween: 20,
             },
             768: {
-              slidesPerView: 2.7,
+              slidesPerView: 2,
               spaceBetween: 20,
             },
             1024: {
-              slidesPerView: 4.4,
+              slidesPerView: 4,
               spaceBetween: 20,
             },
           }}
