@@ -5,6 +5,7 @@ import Listners from '../../containers/LandingPage/Listners'
 import MemberBenefits from '../../containers/LandingPage/MemberBenefits'
 import RecentEpisodes from '../../containers/LandingPage/RecentEpisodes'
 import Sponsor from '../../containers/LandingPage/Sponsor'
+import ArticleAndNews from '../../containers/LandingPage/ArticleAndNews'
 
 
 const LandingPage = () => {
@@ -16,6 +17,7 @@ const LandingPage = () => {
     <MemberBenefits/>
     <RecentEpisodes/>
     <Sponsor/>
+    <ArticleAndNews/>
     </>
   )
 }
