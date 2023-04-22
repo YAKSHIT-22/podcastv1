@@ -72,21 +72,21 @@ const MemberBenefits = () => {
             </div>
           </div>
           <div className="flex items-center justify-center">
-            <div className="grid md:grid-cols-3 s:grid-cols-2 p-2 grid-cols-1 items-center justify-center gap-4">
+            <div className="grid md:grid-cols-3 s:grid-cols-2 p-2 grid-cols-1  justify-center gap-4">
               {cards.map((item) => (
                 <div
                   key={item.id}
-                  className="flex items-center gap-2 justify-center flex-col"
+                  className="flex flex-1 items-center gap-2 justify-center flex-col"
                 >
                   <div className="flex items-center justify-center p-2">
                     <img src={item.img} alt="item.id" className="w-12 " />
                   </div>
-                  <div className="flex items-center justify-center p-2">
+                  <div className="flex items-center justify-center p-2 flex-1">
                     <h1 className="text-center font-extrabold  text-xl lg:text-2xl">
                       {item.title}
                     </h1>
                   </div>
-                  <div className="flex items-center justify-center p-2">
+                  <div className="flex items-center justify-center p-2 ">
                     <p className="text-sm md:text-base text-center font-medium">
                       {item.description}
                     </p>

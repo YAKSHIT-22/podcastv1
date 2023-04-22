@@ -16,7 +16,7 @@ import vector6 from "../../assets/vector6.png";
 import vector7 from "../../assets/vector7.png";
 import youtube from "../../assets/youtube.png";
 import googlePodcasts from "../../assets/googlePodacasts.svg";
-import spotify from "../../assets/spotify.svg";
+import spotify from "../../assets/spotify.png";
 
 const HeroSection = () => {
  SwiperCore.use([Autoplay, Navigation, Pagination]); 
@@ -48,7 +48,7 @@ const HeroSection = () => {
           slidesPerView={5}
           spaceBetween={20}
           navigation={false}
-          autoplay={{ delay: 4500 }}
+          autoplay={{ delay: 3500 }}
           breakpoints={{
             300: {
               slidesPerView: 1,
@@ -63,53 +63,57 @@ const HeroSection = () => {
               spaceBetween: 20,
             },
             1024: {
-              slidesPerView: 4,
+              slidesPerView: 3,
               spaceBetween: 20,
             },
+            1280:{
+              slidesPerView: 4,
+              spaceBetween: 20,
+            }
           }}
         >
           <SwiperSlide>
-            <div className="">
+            <div className="flex items-center justify-center p-2">
               <img
                 src={vector3}
                 alt="img/advocate.svg"
-                className="w-[20rem] h-[20rem]"
+                className="sm:w-[20rem] aspect-square w-[15rem] h-[15rem] sm:h-[20rem]"
               />
             </div>
           </SwiperSlide>
           <SwiperSlide>
-            <div className="">
+            <div className="flex items-center justify-center p-2">
               <img
                 src={vector4}
                 alt="img/kid.svg"
-                className="w-[20rem] h-[20rem]"
+                className="sm:w-[20rem] aspect-square w-[15rem] h-[15rem] sm:h-[20rem]"
               />
             </div>
           </SwiperSlide>
           <SwiperSlide>
-            <div className="">
+            <div className="flex items-center justify-center p-2">
               <img
                 src={vector5}
                 alt="img/stream.svg"
-                className="w-[20rem] h-[20rem]"
+                className="sm:w-[20rem] aspect-square w-[15rem] h-[15rem] sm:h-[20rem]"
               />
             </div>
           </SwiperSlide>
           <SwiperSlide>
-            <div className="">
+            <div className="flex items-center justify-center p-2">
               <img
                 src={vector6}
                 alt="img/gaming.svg"
-                className="w-[20rem] h-[20rem]"
+                className="sm:w-[20rem] aspect-square w-[15rem] h-[15rem] sm:h-[20rem]"
               />
             </div>
           </SwiperSlide>
           <SwiperSlide>
-            <div className="">
+            <div className="flex items-center justify-center p-2">
               <img
                 src={vector7}
                 alt="img/lab.svg"
-                className="w-[20rem] h-[20rem]"
+                className="sm:w-[20rem] aspect-square w-[15rem] h-[15rem] sm:h-[20rem]"
               />
             </div>
           </SwiperSlide>
@@ -121,9 +125,9 @@ const HeroSection = () => {
             <p>Supported By:</p>          
           </div>
           <div className="flex items-center justify-center flex-col md:flex-row w-full p-4">
-         <div className="flex items-center justify-center w-full p-4"> <img src={spotify} className="w-[50%]" alt="spotify" /></div>
-         <div className="flex items-center justify-center w-full p-4"> <img src={youtube} className="w-[50%]" alt="youtube" /></div>
-         <div className="flex items-center justify-center w-full p-4"> <img src={googlePodcasts} className="w-[50%]" alt="google" /></div>
+         <div className="flex items-center justify-center w-full"> <img src={spotify} className="w-[50%] md:w-[75%]" alt="spotify" /></div>
+         <div className="flex items-center justify-center w-full"> <img src={youtube} className="w-[50%] md:w-[75%]" alt="youtube" /></div>
+         <div className="flex items-center justify-center w-full"> <img src={googlePodcasts} className="w-[50%] md:w-[75%]" alt="google" /></div>
           </div>
         </div>
       </div>

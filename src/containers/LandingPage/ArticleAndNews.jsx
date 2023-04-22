@@ -50,7 +50,7 @@ const ArticleAndNews = () => {
             </div>
           </div>
           <div className="flex flex-col items-center justify-center relative">
-            <div className="flex md:flex-row flex-col w-full lg:max-w-6xl justify-center md:gap-5 gap-10 z-[10]">
+            <div className="flex md:flex-row flex-col w-full lg:max-w-6xl justify-center md:gap-8 gap-10 z-[10]">
               {news.map((item) => (
                 <div
                   className={`p-4 border-2 border-black flex flex-col rounded-[24px] gap-4 z-[10] ${
@@ -62,15 +62,15 @@ const ArticleAndNews = () => {
                     <img src={item.img} alt={`img/${item.img}`} />
                   </div>
                   <div className="flex flex-col border-b-2 border-[#4D4D4D] gap-3">
-                    <p className="text-[#4D4D4D] text-base">{item.txt1}</p>
+                    <p className="text-[#4D4D4D] text-sm">{item.txt1}</p>
                     <h1
                       className={`${
                         item.color ? "text-[#CD4631]" : "text-[#000000]"
-                      } text-2xl md:text-3xl lg:text-4xl font-semibold xl:text-4xl`}
+                      } text-2xl md:text-3xl  font-semibold`}
                     >
                       {item.heading}
                     </h1>
-                    <p className="mb-4 text-[#4D4D4D] md:text-base text-sm">
+                    <p className="mb-4 text-[#4D4D4D]  text-sm">
                       {item.txt}
                     </p>
                   </div>
