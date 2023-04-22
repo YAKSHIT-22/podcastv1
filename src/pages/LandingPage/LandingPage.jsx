@@ -1,23 +1,18 @@
 import React from 'react'
-import HeroSection from '../../containers/LandingPage/HeroSection'
-import About from '../../containers/LandingPage/About'
-import Listners from '../../containers/LandingPage/Listners'
-import MemberBenefits from '../../containers/LandingPage/MemberBenefits'
-import RecentEpisodes from '../../containers/LandingPage/RecentEpisodes'
-import Sponsor from '../../containers/LandingPage/Sponsor'
-import ArticleAndNews from '../../containers/LandingPage/ArticleAndNews'
+import { About, ArticleAndNews, AvailableApp, HeroSection, Listeners, MemberBenefits, RecentEpisodes, Sponsor } from '../../containers/LandingPage'
 
 
 const LandingPage = () => {
   return (
     <>
-    <HeroSection/>
-    <About/>
-    <Listners/>
-    <MemberBenefits/>
-    <RecentEpisodes/>
-    <Sponsor/>
-    <ArticleAndNews/>
+      <HeroSection/>
+      <About/>
+      <Listeners/>
+      <MemberBenefits/>
+      <RecentEpisodes/>
+      <Sponsor/>
+      <ArticleAndNews/>
+      <AvailableApp/>
     </>
   )
 }

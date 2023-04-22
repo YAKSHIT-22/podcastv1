@@ -1,4 +1,5 @@
 import React from "react";
+import about from "../../assets/about.svg";
 import article1 from "../../assets/article1.png";
 import article2 from "../../assets/article2.png";
 import article3 from "../../assets/article3.png";
@@ -98,7 +99,7 @@ const ArticleAndNews = () => {
                 className="lg:w-36 md:w-32 md:h-32 sm:w-24 w-20 h-20 sm:h-24 lg:h-36"
               />
             </div>
-            <div className="absolute lg:-bottom-[15rem] lg:-right-[5rem] md:-bottom-[7rem] -bottom-[4rem] -right-[1rem] z-[-1] flex items-center justify-center">
+            <div className="absolute lg:-bottom-[7rem] lg:-right-[5rem] md:-bottom-[7rem] -bottom-[4rem] -right-[1rem] z-[-1] flex items-center justify-center">
               <img
                 src={article4}
                 alt=""
@@ -111,7 +112,9 @@ const ArticleAndNews = () => {
           </div>
         </div>
       </div>
-      <div></div>
+      <div className="absolute -top-10 left-0 right-0 flex items-center justify-center">
+        <img src={about} alt="sprial" className="w-20 h-20" />
+      </div>
     </section>
   );
 };
