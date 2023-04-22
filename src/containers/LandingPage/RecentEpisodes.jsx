@@ -22,7 +22,7 @@ const RecentEpisodes = () => {
                 Available on your favorite platform
               </p>
             </div>
-            <div className="grid md:grid-cols-2 grid-cols-1 md:gap-8 gap-4">
+            <div className="grid md:grid-cols-2 grid-cols-1 md:gap-8 gap-6">
               <div className="flex flex-col justify-center bg-white rounded-[22px] md:p-6 p-3 border-4 border-black drop-shadow shadow-[10px_10px_0px_0px_#81ADC8]">
                 <div className="flex lg:flex-row flex-col items-center gap-4">
                   <img src={eps6} alt="" />
@@ -41,7 +41,7 @@ const RecentEpisodes = () => {
                     </p>
                   </div>
                 </div>
-                <div className="flex lg:flex-row flex-col lg:justify-between items-center justify-center">
+                <div className="flex lg:flex-row flex-col gap-2 lg:justify-between items-center justify-center">
                   <div className="flex gap-3 pt-2">
                     <div className="bg-transparent border-[2px] cursor-pointer border-black py-2 px-4 rounded-[14px] ">
                       <button className="">covid-19</button>
@@ -76,7 +76,7 @@ const RecentEpisodes = () => {
                     </p>
                   </div>
                 </div>
-                <div className="flex lg:flex-row flex-col lg:justify-between items-center justify-center">
+                <div className="flex lg:flex-row flex-col gap-2 lg:justify-between items-center justify-center">
                   <div className="flex gap-3 pt-2">
                     <div className="bg-transparent border-[2px] cursor-pointer border-black py-2 px-4 rounded-[14px] ">
                       <button className="">automation</button>
@@ -111,7 +111,7 @@ const RecentEpisodes = () => {
                     </p>
                   </div>
                 </div>
-                <div className="flex lg:flex-row flex-col lg:justify-between items-center justify-center">
+                <div className="flex lg:flex-row flex-col gap-2 lg:justify-between items-center justify-center">
                   <div className="flex gap-3 pt-2">
                     <div className="bg-transparent border-[2px] cursor-pointer border-black py-2 px-4 rounded-[14px] ">
                       <button className="">Women's Right</button>
@@ -143,7 +143,7 @@ const RecentEpisodes = () => {
                     </p>
                   </div>
                 </div>
-                <div className="flex lg:flex-row flex-col lg:justify-between items-center justify-center">
+                <div className="flex lg:flex-row flex-col gap-2 lg:justify-between items-center justify-center">
                   <div className="flex gap-3 pt-2">
                     <div className="bg-transparent border-[2px] cursor-pointer border-black py-2 px-4 rounded-[14px] ">
                       <button className="">self-esteem</button>
@@ -178,7 +178,7 @@ const RecentEpisodes = () => {
                     </p>
                   </div>
                 </div>
-                <div className="flex lg:flex-row flex-col lg:justify-between items-center justify-center">
+                <div className="flex lg:flex-row flex-col gap-2 lg:justify-between items-center justify-center">
                   <div className="flex gap-3 pt-2">
                     <div className="bg-transparent border-[2px] cursor-pointer border-black py-2 px-4 rounded-[14px] ">
                       <button className="">social class</button>
@@ -213,7 +213,7 @@ const RecentEpisodes = () => {
                     </p>
                   </div>
                 </div>
-                <div className="flex lg:flex-row flex-col lg:justify-between items-center justify-center">
+                <div className="flex lg:flex-row flex-col gap-2 lg:justify-between items-center justify-center">
                   <div className="flex gap-3 pt-2">
                     <div className="bg-transparent border-[2px] cursor-pointer border-black py-2 px-4 rounded-[14px] ">
                       <button className="">mind-behavior</button>

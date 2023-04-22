@@ -4,7 +4,7 @@ import twitter from "../../assets/twitter.png";
 import instagram from "../../assets/instagram.png";
 import tik from "../../assets/tik.png";
 import googlePodcasts from "../../assets/googlePodacasts.svg";
-import spotify from "../../assets/spotify1.svg";
+import spotify from "../../assets/spotify.png";
 import youtube from "../../assets/youtube.png";
 import applestore from "../../assets/applestore.png";
 import playstore from "../../assets/playstore.png";
@@ -14,9 +14,9 @@ const Footer = () => {
     <footer className="flex select-none items-center justify-center p-3 md:p-6 relative h-full">
       <div className="flex items-center justify-center w-full mx-auto p-4 sm:p-6 lg:p-8">
         <div className="flex items-center justify-center w-full flex-col s:p-4 p-2 my-4 md:p-6 gap-4 sm:gap-6 lg:gap-10">
-          <div className="flex lg:justify-between md:justify-center md:flex-row flex-col items-center lg:gap-24 gap-8">
+          <div className="flex lg:justify-between md:justify-center s:flex-row flex-col items-center lg:gap-24 gap-8">
             <div className="flex flex-col justify-center lg:gap-4 gap-6 lg:w-[40%]">
-              <div className="flex items-baseline lg:gap-8 gap-10">
+              <div className="flex items-baseline gap-4 md:gap-8 ">
                 <img src={logo} alt="" />
                 <p>&copy;2021.</p>
               </div>
@@ -45,16 +45,16 @@ const Footer = () => {
                 </div>
               </div>
               <div className="flex flex-col justify-center gap-6 ">
-                <div className="flex flex-col justify-center">
-                  <p>Listen to episodes on your fav platform:</p>
+                <div className="flex flex-col justify-center gap-4">
+                  <p className="flex items-center text-center">Listen to episodes on your fav platform:</p>
                   <div className="flex items-center justify-center gap-2 lg:flex-row flex-col">
-                    <img src={googlePodcasts} alt="" className="lg:w-36" />
-                    <img src={spotify} alt="" />
-                    <img src={youtube} alt="" className="lg:w-36" />
+                  <div className="flex items-center justify-center w-full"><img src={googlePodcasts} alt="" className="w-[50%] md:w-[75%] h-[33%]" /></div>
+                  <div className="flex items-center justify-center w-full"><img src={spotify} alt="" className="w-[50%] md:w-[75%] h-[33%]" /></div>
+                  <div className="flex items-center justify-center w-full"> <img src={youtube} alt="" className="w-[50%] md:w-[75%] h-[33%]" /></div>
                   </div>
                 </div>
-                <div className="flex flex-col justify-center gap-4 ">
-                  <p>App available on:</p>
+                <div className="flex flex-col justify-center gap-2">
+                  <p className="flex items-center justify-center text-center">App available on:</p>
                   <div className="flex items-center justify-center gap-2 flex-row ">
                     <img src={applestore} alt="" />
                     <img src={playstore} alt="" />

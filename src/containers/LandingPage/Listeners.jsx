@@ -38,7 +38,7 @@ const Listners = () => {
             </div>
           </div>
         </div>
-        <div className="absolute top-10 left-[14rem] flex items-center justify-center">
+        <div className="absolute top-10 s:left-[8rem]  md:left-[10rem] lg:left-[14rem] hidden sm:flex items-center justify-center">
           <svg
             width="105"
             height="105"
@@ -80,7 +80,7 @@ const Listners = () => {
      
       <div className="w-full swiper md:pt-12 pt-6 pb-10 bg-[#EDF3F7] relative">
         <div className="overflow-hidden w-full">
-          <div className="w-full mb-6">
+          <div className="w-full mb-6 p-2">
             <Swiper
               modules={[Navigation, Pagination, EffectFade, Autoplay]}
               //   slidesPerView={5}
@@ -96,18 +96,22 @@ const Listners = () => {
                   slidesPerView: 1,
                   spaceBetween: 10,
                 },
-                520: {
+                640: {
                   slidesPerView: 2,
                   spaceBetween: 20,
                 },
                 768: {
-                  slidesPerView: 2.5,
+                  slidesPerView: 2,
                   spaceBetween: 20,
                 },
                 1024: {
-                  slidesPerView: 2.7,
+                  slidesPerView: 2,
                   spaceBetween: 20,
                 },
+                1280:{
+                  slidesPerView:3,
+                  spaceBetween: 20,
+                }
               }}
             >
               <SwiperSlide>
@@ -120,7 +124,7 @@ const Listners = () => {
                         Aliquam facere rem consectetur, quod voluptates numquam
                         quis quos esse ut?
                       </p>
-                      <div className="flex justify-center items-center p-2 gap-2">
+                      <div className="flex sm:flex-row flex-col w-full justify-center items-center p-2 gap-2">
                         <img src={pic1} alt="" />
                         <p className="text-xs lg:text-base">Luna lovegood,</p>
                         <img src={spotify1} alt="" />
@@ -139,7 +143,7 @@ const Listners = () => {
                         Aliquam facere rem consectetur, quod voluptates numquam
                         quis quos esse ut?
                       </p>
-                      <div className="flex justify-center items-center p-2 gap-2">
+                      <div className="flex justify-center sm:flex-row flex-col w-full items-center p-2 gap-2">
                         <img src={pic2} alt="" />
                         <p  className="text-xs lg:text-base">Luna lovegood,</p>
                         <img src={googlePod} alt="" />
@@ -158,7 +162,7 @@ const Listners = () => {
                         Aliquam facere rem consectetur, quod voluptates numquam
                         quis quos esse ut?
                       </p>
-                      <div className="flex justify-center items-center p-2 gap-2">
+                      <div className="flex justify-center sm:flex-row flex-col w-full items-center p-2 gap-2">
                         <img src={pic1} alt="" />
                         <p  className="text-xs lg:text-base">Luna lovegood,</p>
                         <img src={spotify1} alt="" />
@@ -177,7 +181,7 @@ const Listners = () => {
                         Aliquam facere rem consectetur, quod voluptates numquam
                         quis quos esse ut?
                       </p>
-                      <div className="flex justify-center items-center p-2 gap-2">
+                      <div className="flex justify-center sm:flex-row flex-col w-full items-center p-2 gap-2">
                         <img src={pic3} alt="" />
                         <p  className="text-xs lg:text-base">Luna lovegood,</p>
                         <img src={applePod} alt="" />
@@ -196,7 +200,7 @@ const Listners = () => {
                         Aliquam facere rem consectetur, quod voluptates numquam
                         quis quos esse ut?
                       </p>
-                      <div className="flex justify-center items-center p-2 gap-2">
+                      <div className="flex justify-center sm:flex-row flex-col w-full items-center p-2 gap-2">
                         <img src={pic1} alt="" />
                         <p  className="text-xs lg:text-base">Luna lovegood,</p>
                         <img src={spotify1} alt="" />
@@ -215,7 +219,7 @@ const Listners = () => {
                         Aliquam facere rem consectetur, quod voluptates numquam
                         quis quos esse ut?
                       </p>
-                      <div className="flex justify-center items-center p-2 gap-2">
+                      <div className="flex justify-center sm:flex-row flex-col w-full items-center p-2 gap-2">
                         <img src={pic2} alt="" />
                         <p  className="text-xs lg:text-base">Luna lovegood,</p>
                         <img src={googlePod} alt="" />
@@ -234,7 +238,7 @@ const Listners = () => {
                         Aliquam facere rem consectetur, quod voluptates numquam
                         quis quos esse ut?
                       </p>
-                      <div className="flex justify-center items-center gap-2">
+                      <div className="flex justify-center sm:flex-row flex-col w-full items-center p-2 gap-2">
                         <img src={pic3} alt="" />
                         <p  className="text-xs lg:text-base">Luna lovegood,</p>
                         <img src={applePod} alt="" />

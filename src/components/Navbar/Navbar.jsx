@@ -38,7 +38,7 @@ const Navbar = () => {
           </div>
         </div>
       </div>
-      <div>
+      <div className="relative">
       <div className="lg:hidden flex">
           <div className="w-full px-[20px] py-[10px] z-[40] bg-[#F7EDE8]">
             <div className="flex justify-between items-center">
@@ -63,24 +63,26 @@ const Navbar = () => {
           </div>
         </div>
         <nav
-          className={`fixed h-screen w-screen flex flex-col py-6 px-6 bg-black text-white uppercase overflow-y-auto lg:hidden z-[1000] items-center justify-center transition-transform duration-500 ${
+          className={`fixed top-0  w-screen flex flex-col py-6 px-6 bg-black text-white uppercase h-screen lg:hidden z-[1000] items-center justify-center transition-transform duration-500 ${
             popupState ? "showpopup" : "noshowpopup"
           }`}
         >
-          <ul className=" flex items-start flex-col gap-3">
+          <div className="flex item-center justify-end text-white font-extrabold p-4 w-full" onClick={onTriggerPopup}><div className="p-5 rounded-full border  border-white cursor-pointer">X</div></div>
+          <div className="flex items-center justify-center w-full h-full"><ul className=" flex items-start flex-col gap-3">
             <li>
               <a href="#landing-page">Episodes</a>
             </li>
             <li>
               <a href="#about-us">about</a>
             </li>
-            <div className="bg-transparent border-[3px] cursor-pointer font-bold border-black py-2 px-4 rounded-[14px] ">
+            <div className="bg-transparent border-[3px] cursor-pointer font-bold border-black py-2 rounded-[14px] ">
               <button className="uppercase">recent episodes</button>
             </div>
             <div className="bg-black cursor-pointer font-bold py-2 px-4 rounded-[14px] drop-shadow shadow-[5px_5px_0px_0.25px_gray]">
               <button className="uppercase text-white">subscribe</button>
             </div>
           </ul>
+          </div>
         </nav>
       </div>
     </>
