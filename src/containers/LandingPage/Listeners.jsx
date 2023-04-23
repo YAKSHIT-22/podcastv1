@@ -124,7 +124,7 @@ const Listners = () => {
                         Aliquam facere rem consectetur, quod voluptates numquam
                         quis quos esse ut?
                       </p>
-                      <div className="flex sm:flex-row flex-col w-full justify-center items-center p-2 gap-2">
+                      <div className="flex sm:flex-row flex-col w-full justify-center items-center md:justify-start p-2 gap-2">
                         <img src={pic1} alt="" />
                         <p className="text-xs lg:text-base">Luna lovegood,</p>
                         <img src={spotify1} alt="" />
@@ -143,7 +143,7 @@ const Listners = () => {
                         Aliquam facere rem consectetur, quod voluptates numquam
                         quis quos esse ut?
                       </p>
-                      <div className="flex justify-center sm:flex-row flex-col w-full items-center p-2 gap-2">
+                      <div className="flex justify-center sm:flex-row flex-col w-full items-center md:justify-start p-2 gap-2">
                         <img src={pic2} alt="" />
                         <p  className="text-xs lg:text-base">Luna lovegood,</p>
                         <img src={googlePod} alt="" />
@@ -162,7 +162,7 @@ const Listners = () => {
                         Aliquam facere rem consectetur, quod voluptates numquam
                         quis quos esse ut?
                       </p>
-                      <div className="flex justify-center sm:flex-row flex-col w-full items-center p-2 gap-2">
+                      <div className="flex justify-center sm:flex-row flex-col w-full items-center md:justify-start p-2 gap-2">
                         <img src={pic1} alt="" />
                         <p  className="text-xs lg:text-base">Luna lovegood,</p>
                         <img src={spotify1} alt="" />
@@ -181,7 +181,7 @@ const Listners = () => {
                         Aliquam facere rem consectetur, quod voluptates numquam
                         quis quos esse ut?
                       </p>
-                      <div className="flex justify-center sm:flex-row flex-col w-full items-center p-2 gap-2">
+                      <div className="flex justify-center sm:flex-row flex-col w-full items-center md:justify-start p-2 gap-2">
                         <img src={pic3} alt="" />
                         <p  className="text-xs lg:text-base">Luna lovegood,</p>
                         <img src={applePod} alt="" />
@@ -200,7 +200,7 @@ const Listners = () => {
                         Aliquam facere rem consectetur, quod voluptates numquam
                         quis quos esse ut?
                       </p>
-                      <div className="flex justify-center sm:flex-row flex-col w-full items-center p-2 gap-2">
+                      <div className="flex justify-center sm:flex-row flex-col w-full items-center md:justify-start p-2 gap-2">
                         <img src={pic1} alt="" />
                         <p  className="text-xs lg:text-base">Luna lovegood,</p>
                         <img src={spotify1} alt="" />
@@ -219,7 +219,7 @@ const Listners = () => {
                         Aliquam facere rem consectetur, quod voluptates numquam
                         quis quos esse ut?
                       </p>
-                      <div className="flex justify-center sm:flex-row flex-col w-full items-center p-2 gap-2">
+                      <div className="flex justify-center sm:flex-row flex-col w-full items-center md:justify-start p-2 gap-2">
                         <img src={pic2} alt="" />
                         <p  className="text-xs lg:text-base">Luna lovegood,</p>
                         <img src={googlePod} alt="" />
@@ -238,7 +238,7 @@ const Listners = () => {
                         Aliquam facere rem consectetur, quod voluptates numquam
                         quis quos esse ut?
                       </p>
-                      <div className="flex justify-center sm:flex-row flex-col w-full items-center p-2 gap-2">
+                      <div className="flex justify-center sm:flex-row flex-col w-full items-center md:justify-start p-2 gap-2">
                         <img src={pic3} alt="" />
                         <p  className="text-xs lg:text-base">Luna lovegood,</p>
                         <img src={applePod} alt="" />
