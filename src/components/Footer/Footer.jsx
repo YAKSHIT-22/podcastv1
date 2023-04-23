@@ -45,7 +45,7 @@ const Footer = () => {
                 </div>
               </div>
               <div className="flex flex-col justify-center gap-6 ">
-                <div className="flex flex-col justify-center gap-4">
+                <div className="flex flex-col justify-center items-center gap-4">
                   <p className="flex items-center text-center">Listen to episodes on your fav platform:</p>
                   <div className="flex items-center justify-center gap-2 lg:flex-row flex-col">
                   <div className="flex items-center justify-center w-full"><img src={googlePodcasts} alt="" className="w-[50%] md:w-[75%] h-[33%]" /></div>
